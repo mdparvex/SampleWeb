@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        </script>
+    <title>Sample Interest Calculator</title>
+    </head>
+    <div class = "maindiv">
+        <body>
+            <h1>Simple Interest Calculator</h1>
+            <br><br>
+            <label for="principal">Amount </label>
+            <input type="text" id="principal" name="principal">
+            <br><br>
+            <label for="rate">Interest rate</label>
+            <input type="range"  id="rate" name="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()">
+                <span id="rate_val">
+                10.25%
+                </span>
+                <br><br>
+                <label for="years">No. of Years </label>
+                <select id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br><br>
+                <button onclick="return compute()">Compute Interest</button>
+                <br><br>
+                <p id="demo"></p>
+                <br><br>
+        </body>
+        <footer>
+
+            &#169; This Calculator belongs to Md. Abdulla Al Mamun
+    
+    
+    </footer>
+    </div>
+
+<html>
